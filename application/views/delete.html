@@ -1,0 +1,29 @@
+$def with(datos)
+<h1>Delete</h1>
+
+  <form method="POST">              
+      <div class="form-group">
+          <label for="nombre">NOMBRE COMPLETO:</label>
+          <input type="text" class="form-control" id="nombre" value="$datos.nombre" name="nombre" placeholder="escribir nombre completo">         
+        </div>
+        <div class="form-group">
+          <label for="escuela">ESCUELA</label>
+          <input type="text" class="form-control" id="escuela" name="escuela" value="$datos.escuela" placeholder="escribir nombre de la escuela">
+        </div>
+        <div class="form-group">
+            <label for="promedio">PROMEDIO</label>
+            <input type="text" class="form-control" id="promedio" name="promedio" value="$datos.promedio" placeholder="escribir tu promedio actual ">
+          </div>
+      
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="email">EMAIL</label>
+            <input type="email" class="form-control" readonly="true" value="$datos.email" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>    
+        <div class="form-group col-md-6">
+            <label for="exampleInputPassword1">CONTRASEÑA</label>
+            <input type="password" class="form-control" id="password" name="password" value="$datos.password" placeholder="Password">
+        </div>
+    </div>     
+      <button type="submit" class="btn btn-primary">E L I M I N A R</button>
+    </form>
